@@ -47,7 +47,7 @@ let getWeather = () => {
   if (cityValue.length == 0) {
     result.innerHTML = `<h3 class="msg">Please Enter a city Name</h3> `;
   } else {
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${API_KEY}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${API_KEY}&units=metric`;
     console.log(cityValue);
     cityRef.value = "";
     axios
